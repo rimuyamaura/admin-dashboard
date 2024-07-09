@@ -1,2 +1,3 @@
 # admin-dashboard
-backend .NET webAPI for a user management system
+
+backend .NET webAPI practice for a user roles management system
