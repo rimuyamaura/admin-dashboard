@@ -22,7 +22,7 @@ namespace backend.Controllers
         [Authorize(Roles = StaticUserRoles.OwnerAdmin)]
         public async Task<ActionResult<IEnumerable<GetLogDto>>> GetLogs()
         {
-            var logs = _logService.GetLogsAsync();
+            var logs = await _logService.GetLogsAsync();
             return Ok(logs);
         }
 
@@ -31,7 +31,7 @@ namespace backend.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<GetLogDto>>> GetMyLogs()
         {
-            var logs = _logService.GetMyLogsAsync(User);
+            var logs = await _logService.GetMyLogsAsync(User);
             return Ok(logs);
         }
     }
