@@ -26,11 +26,11 @@ builder.Services
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
 
-
 // Add DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("local"));
+    // options.UseSqlServer(builder.Configuration.GetConnectionString("local"));
+    options.UseSqlServer(Environment.GetEnvironmentVariable("CONNECTION_STRING"));
 });
 
 
