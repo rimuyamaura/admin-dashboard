@@ -7,10 +7,10 @@ Unregistered users can register, login, view user's list
 
 Roles and permissions:
 
-|     Role     | Messaging | View own logs | View all logs |     Edit other user's roles      |
-| :----------: | :-------: | :-----------: | :-----------: | :------------------------------: |
-|    OWNER     |    yes    |      yes      |      yes      |  can change for all other roles  |
-|    ADMIN     |    yes    |      yes      |      yes      | can change for manager and below |
-|   MANAGER    |    yes    |      yes      |      no       |                no                |
-|     USER     |    yes    |      yes      |      no       |                no                |
-| UNREGISTERED |    no     |      no       |      no       |                no                |
+|     Role     | Messaging | View all messages | View own logs | View all logs |     Edit other user's roles      |
+| :----------: | :-------: | :---------------: | :-----------: | :-----------: | :------------------------------: |
+|    OWNER     |    yes    |        yes        |      yes      |      yes      |  can change for all other roles  |
+|    ADMIN     |    yes    |        yes        |      yes      |      yes      | can change for manager and below |
+|   MANAGER    |    yes    |        no         |      yes      |      no       |                no                |
+|     USER     |    yes    |        no         |      yes      |      no       |                no                |
+| UNREGISTERED |    no     |        no         |      no       |      no       |                no                |
